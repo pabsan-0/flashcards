@@ -28,7 +28,7 @@ contexts:
     # Expected first line after separator 
     # - Text left of whitespace is FLASHCARD NUMBER.
     # - Text right of whitespace is user edited date.
-    - match: '^(.*)(\s){3,}(.*)$'
+    - match: '^(.*)(\s){3,}([^:]*)$'
       captures:
         1: markup.heading
         3: markup.italic

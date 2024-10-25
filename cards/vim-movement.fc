@@ -1,0 +1,22 @@
+vim    The apex text editor
+
+==============================================================================
+FLASHCARD 01                                                       24-Oct-2024
+
+Basic
+hjkl        : basic directions
+fa Fa       : move to next/previous `a` in line
+ta Ta       : move one position before next/previous `a` in line
+{}          : previous/next paragraph
+%           : jump to matching parentheses
+
+Intermediate
+ge gE       : end of previous word / WORD
+<c-o> <c-i> : go back/forward the jump list
+g; g,       : go back/forward the change list
+
+Crazy
+gi          : jump to last insertion
+gf          : jump to filename under cursor
+gd          : jump to first definition/appearance of word under cursor
+
