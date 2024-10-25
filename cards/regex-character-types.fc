@@ -1,0 +1,25 @@
+regex    matching and replacing text
+
+==============================================================================
+FLASHCARD 05                                                       24-Oct-2024
+
+Basic
+.    : matches any character, but not \n
+\s   : matches whitespace
+\d   : matches digit
+\x   : matches hex digit
+\o   : matches octal digit
+\h   : matches head of word character `[a-zA-Z_]`
+\w   : matches word character
+\a   : matches alphabetic character
+\l   : matches lowercase character
+\u   : matches uppercase character
+
+Special
+\b   : matches word boundaries eg `\bagree` does not match `disagree`
+\p   : matches printable character
+
+Negated characters
+\S   : matches not whitespace
+\D   : matches not digit
+...  : ...

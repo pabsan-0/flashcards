@@ -1,0 +1,22 @@
+regex    matching and replacing text
+
+==============================================================================
+FLASHCARD 05                                                       24-Oct-2024
+
+
+Simples
+*      : match 0 or more of the preceding atom
+\+     : match 1 or more of the preceding atom, as many as possible
+\= \?  : matches 0 or 1 or more of the preceding atom
+
+Greedy quantifiers
+{n,m}  : matches from n to m of the preceding atom
+{n}    : matches exactly n times of the preceding
+{,m}   : matches at most m, equal to `{0,m}`
+{n,}   : at least n of the preceding atoms
+
+Non greedy quantifiers
+{-n,m} : from n to m, as few as possible
+{-}    : match 0 or more, as few as possible
+{-,m}  :
+{-n,}  :

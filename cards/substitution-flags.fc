@@ -1,0 +1,11 @@
+substitution    replacing text in various contexts
+
+==============================================================================
+FLASHCARD 06                                                       24-Oct-2024
+
+Basic
+s///   : baseline, substitutes first appearance
+s///g  : substitute all appearances
+s///c  : ask for confirmation before replacement
+s///i  : ignore upper/lower case, default is smart case
+s///I  : do not ignore upper/lower case

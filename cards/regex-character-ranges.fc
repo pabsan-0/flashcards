@@ -1,0 +1,13 @@
+regex    matching and replacing text
+
+==============================================================================
+FLASHCARD 02                                                       24-Oct-2024
+
+
+Regex character ranges
+[abc]  :  matches any of the charactes inside  
+[a-c]  :  equivalent to the above   
+[-ab]  :  matches a, b or -, sorting-agnostic  
+[A-Z]  :  matches uppercase letters  
+[aA]   :  matches a or A  
+[^aA]  :  negates expression, ^ must be first character  

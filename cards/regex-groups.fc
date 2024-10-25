@@ -1,0 +1,14 @@
+regex    matching and replacing text
+
+==============================================================================
+FLASHCARD 03                                                       24-Oct-2024
+
+
+Regex groups
+\(hello)           : matches as usual, but can be used for s/// backreferencing with \1
+h\(e\|a\)llo       : equivalent to `h[ea]llo`, greedily (order is important)
+\(hello\|hallo\)   : matches either word
+\(?:hello\|hallo\) : matches either word without backreference
+
+foo\zsbar          : matches bar from `foobar`
+foo\zebar          : matches foo from `foobar`

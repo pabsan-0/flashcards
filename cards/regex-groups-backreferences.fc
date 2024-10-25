@@ -1,0 +1,12 @@
+regex    matching and replacing text
+
+==============================================================================
+FLASHCARD 04                                                       24-Oct-2024
+
+
+Backreferences
+&  : whole matched pattern
+\0 : whole matched pattern
+\1 : matched pattern in the 1st pair of \(\), can match even on the left side!
+\n : matched pattern in the nth pair of \(\)
+~  : previous substitute string
