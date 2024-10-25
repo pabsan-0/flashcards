@@ -67,12 +67,28 @@ add_flashcard () {
 
 case ${1-""} in
     "")
-        cd "$__FLASHCARDS_ROOT" || exit 1
-        find "$__FLASHCARDS_ROOT/cards" -type f | fzf          \
-            --bind='enter:abort+execute(vim {1})'              \
-            --bind=',:abort+execute(vim $(dirname {1}))'       \
-            --preview="batcat --color=always --style snip {} " \
-            --header='browse , edit ↵ '                        ;
+        cd "$__FLASHCARDS_ROOT/cards" || exit 1
+
+        rg  --with-filename .                                   \
+            --color=always                                      \
+            --field-match-separator ' ' 2> /dev/null           |\
+        fzf                                                     \
+            --ansi                                              \
+            --bind='enter:abort+execute(vim {1})'               \
+            --bind=',:abort+execute(vim $(dirname {1}))'        \
+            --preview="batcat --color=always --style snip {1} " \
+            --header='browse , edit ↵ '                         ;
+        ;;
+
+    -n|--names)
+        cd "$__FLASHCARDS_ROOT/cards" || exit 1
+
+        find . -type f | fzf                                   \
+            --ansi                                              \
+            --bind='enter:abort+execute(vim {1})'               \
+            --bind=',:abort+execute(vim $(dirname {1}))'        \
+            --preview="batcat --color=always --style snip {1} " \
+            --header='browse , edit ↵ '                         ;
         ;;
 
     -a|--add)
