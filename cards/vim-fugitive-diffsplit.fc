@@ -1,0 +1,10 @@
+vim-fugitive     A plugin so good, it should be illegal
+
+=================================================================
+FLASHCARD 08                                          25-Oct-2024
+
+:Gvdiff!     : opens a three-way vertical split
+:diffput dp  : puts changes of current buffer into target
+:diffget     : gets changes of target into current buffer
+:diffupdate  : fixes graphics after manually fiddling changing
+:Gwrite      : writes any of the 3 buffers and git-adds it
