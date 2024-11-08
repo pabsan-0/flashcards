@@ -1,0 +1,15 @@
+git-worktrees    working with several branches at once
+
+=================================================================
+FLASHCARD 01                                          05-Nov-2024
+
+Setting up workspace
+mkdir repo.git                      : manually create a working directory
+cd repo.git                         : make sure to be inside it
+git clone --bare url repo.git       : bare clone of the repo
+cd repo.git                         : at first you'll operate from in there
+
+Worktree handling
+git worktree add ../<dir> <branch>  : create a dir for a branch/commit
+git worktree list                   : list active worktrees
+git worktree remove [-f] <path>     : remove a worktree
